@@ -22,8 +22,8 @@ body {
 
 .fill {
   background-image: url("https://source.unsplash.com/random/150x150");
-  width: 145px;
-  height: 145px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 }
 
