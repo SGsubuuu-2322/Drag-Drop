@@ -1,16 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Young serif";
+  background-color: rgb(55, 165, 255);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+.fill {
+  background-image: url("https://source.unsplash.com/random/150x150");
+  width: 145px;
+  height: 145px;
+  cursor: pointer;
+}
+
+.hold {
+  border: 5px solid #ccc;
+}
+
+.hovered {
+  background-color: #333;
+  border-style: dashed;
+  border-color: whitesmoke;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
 }
