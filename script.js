@@ -1,6 +1,11 @@
+// This is the scripts for adding some actions into the web page...
+
+// This is for holding the important HTML elements for the DOM manipulations...
 const fill = document.querySelector(".fill");
 const empties = document.querySelectorAll(".empty");
 
+
+// This is to handle the drag-start and drag-end events on the fill class or on the image...
 fill.addEventListener("dragstart", dragStart);
 fill.addEventListener("dragend", dragEnd);
 
