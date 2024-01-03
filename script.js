@@ -29,16 +29,24 @@ function dragStart() {
 function dragEnd() {
   this.className = "fill";
 }
+
+// This method is for handling the dragover event and stopping it from doing its default actions....
 function dragOver(e) {
   e.preventDefault();
 }
+
+// This method is for the handling the dragenter event, by stopping its default behaviour and adding dynamically hovered class on which the image is being dragged over....
 function dragEnter(e) {
   e.preventDefault();
   this.className += " hovered";
 }
+
+// This method is for handling the dragleave event, by dynamically adding the empty class onto it...
 function dragLeave() {
   this.className = "empty";
 }
+
+// This method is for handling the dragdrop event, by adding the empty class and appening the fill class into it...
 function dragDrop() {
   this.className = "empty";
   this.append(fill);
