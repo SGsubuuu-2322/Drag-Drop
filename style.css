@@ -15,6 +15,7 @@ body {
 
 /* This is some general styling stuff for the entire project... */
 
+/* This is for the empty container to hold the image... */
 .empty {
   height: 150px;
   width: 150px;
@@ -23,6 +24,7 @@ body {
   border: 2px solid black;
 }
 
+/* This is for the background image in the container */
 .fill {
   background-image: url("https://source.unsplash.com/random/150x150");
   width: 147px;
@@ -30,16 +32,19 @@ body {
   cursor: pointer;
 }
 
+/* This is for holding up the images */
 .hold {
   border: 5px solid #ccc;
 }
 
+/* This is for the empty box's style when an image is hovered on it... */
 .hovered {
   background-color: #333;
   border-style: dashed;
   border-color: whitesmoke;
 }
 
+/* This is the for the responsiveness of the project... */
 @media (max-width: 800px) {
   body {
     flex-direction: column;
